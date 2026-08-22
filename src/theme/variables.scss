@@ -1,2 +1,12 @@
-// For information on how to create your own theme, please refer to:
-// https://ionicframework.com/docs/theming/
+// Ionic Variables and Theming. For more info, please see:
+// http://ionicframework.com/docs/theming/
+
+:root {
+  /* Cabanatuan / LGU Dark Green */
+  --ion-color-primary: #065f46;
+  --ion-color-primary-rgb: 6,95,70;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255,255,255;
+  --ion-color-primary-shade: #054e3a;
+  --ion-color-primary-tint: #1f6f58;
+}

@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-button routerLink="/home">Back</ion-button>
+    </ion-buttons>
+    <ion-title>Announcements</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  @for (item of newsList; track item.id) {
+    <ion-card class="lgu-card">
+      <ion-card-header>
+        <ion-card-subtitle>{{ item.date }} • {{ item.author }}</ion-card-subtitle>
+        <ion-card-title>{{ item.title }}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>{{ item.summary }}</p>
+      </ion-card-content>
+    </ion-card>
+  } @empty {
+    <div class="ion-text-center ion-padding">
+      <p>No news available at the moment.</p>
+    </div>
+  }
+</ion-content>

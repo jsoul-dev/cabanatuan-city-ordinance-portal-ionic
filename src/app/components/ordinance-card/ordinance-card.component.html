@@ -1,0 +1,16 @@
+<ion-card class="lgu-card">
+  <ion-card-header>
+    <ion-card-subtitle class="ion-text-uppercase">{{ ordinance().resNo }}</ion-card-subtitle>
+    <ion-card-title>{{ ordinance().title }}</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    <p><strong>Category:</strong> {{ ordinance().category }}</p>
+    <p><strong>Filed By:</strong> {{ ordinance().filedBy }}</p>
+    <div style="margin-top: 10px; display: flex; justify-content: space-between; align-items: center;">
+      <ion-badge [color]="ordinance().status === 'Approved' ? 'success' : 'warning'">
+        {{ ordinance().status }}
+      </ion-badge>
+      <ion-button fill="clear" size="small" (click)="viewDetails()">View Details</ion-button>
+    </div>
+  </ion-card-content>
+</ion-card>

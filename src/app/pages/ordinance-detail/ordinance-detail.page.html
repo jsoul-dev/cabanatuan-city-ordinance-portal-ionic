@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-button routerLink="/ordinances">Back</ion-button>
+    </ion-buttons>
+    <ion-title>Ordinance Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  @if (ordinance) {
+    <ion-card class="lgu-card" style="margin-top: 1rem;">
+      <ion-card-header>
+        <div style="display: flex; justify-content: space-between; align-items: start;">
+          <ion-card-subtitle>{{ ordinance.resNo }}</ion-card-subtitle>
+          <ion-badge [color]="ordinance.status === 'Approved' ? 'success' : 'warning'">{{ ordinance.status }}</ion-badge>
+        </div>
+        <ion-card-title>{{ ordinance.title }}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list lines="none">
+          <ion-item>
+            <ion-label>
+              <h3>Category</h3>
+              <p>{{ ordinance.category }}</p>
+            </ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>
+              <h3>Date Filed</h3>
+              <p>{{ ordinance.dateFiled }}</p>
+            </ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>
+              <h3>Filed By</h3>
+              <p>{{ ordinance.filedBy }}</p>
+            </ion-label>
+          </ion-item>
+        </ion-list>
+        
+        <div class="ion-padding-top">
+          <h3>Description</h3>
+          <p style="line-height: 1.6;">{{ ordinance.content }}</p>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  } @else {
+    <div class="ion-text-center ion-padding">
+      <p>Ordinance not found.</p>
+    </div>
+  }
+</ion-content>

@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-button routerLink="/home">Back</ion-button>
+    </ion-buttons>
+    <ion-title>Ordinances</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  <ion-searchbar [(ngModel)]="searchQuery" (ionInput)="filterOrdinances()" placeholder="Search ordinances..."></ion-searchbar>
+  
+  @for (ord of filteredOrdinances; track ord.id) {
+    <app-ordinance-card [ordinance]="ord" (selected)="selectOrdinance($event)" routerLink="/ordinance-detail"></app-ordinance-card>
+  } @empty {
+    <div class="ion-text-center ion-padding" style="margin-top: 2rem;">
+      <p>No ordinances found matching your search.</p>
+    </div>
+  }
+</ion-content>
