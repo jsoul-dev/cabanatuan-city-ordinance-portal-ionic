@@ -1,4 +1,4 @@
-# Cabanatuan City Ordinance Portal (Ionic Mobile Prototype)
+# 🏛️ Cabanatuan City Ordinance Portal (Mobile Prototype)
 
 This repository contains the mobile application prototype for the Cabanatuan City Ordinance Portal. It is built using the modern Ionic Framework (v9) and Angular (v19), serving as the mobile interface for local government unit (LGU) announcements and ordinance exploration.
 
