@@ -22,7 +22,7 @@ To run this project locally, ensure you have the following installed on your mac
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/YOUR_GITHUB_USERNAME/cabanatuan-city-ordinance-portal-ionic.git
+   git clone https://github.com/jsoul-dev/cabanatuan-city-ordinance-portal-ionic.git
    cd cabanatuan-city-ordinance-portal-ionic
    ```
 
