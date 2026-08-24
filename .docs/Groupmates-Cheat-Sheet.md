@@ -4,7 +4,23 @@
 
 ---
 
-## 1. The Basics (What are we even using?)
+## 1. The Two Modules (What did we build?)
+
+**"What 2 capstone modules did you prototype for this lab?"**
+> **Answer:** 
+> 1. **Ordinance Explorer:** Allows citizens to browse, search, and view details of local ordinances.
+> 2. **LGU News & Announcements:** A feed for viewing the latest updates from the local government unit.
+
+---
+
+## 2. UI/UX & Mobile Adaptation
+
+**"How did you adapt this for mobile use?"**
+> **Answer:** "We used native-feeling **Ionic components** like `<ion-card>` for the feed, an `<ion-searchbar>` for easy mobile filtering, and an `<ion-header>` with an `<ion-toolbar>` for familiar app navigation. We also customized the theme in `variables.scss` to use the LGU's official dark green color."
+
+---
+
+## 3. The Basics (What are we even using?)
 
 **"What framework are you using?"**
 > **Answer:** "We are using **Ionic v9** combined with **Angular v19**."
